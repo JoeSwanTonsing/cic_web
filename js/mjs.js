@@ -52,9 +52,9 @@ function showPharmacy(){
 }
 
 $(document).ready( function () {
-  $('#data_table').DataTable({
-    paging: false,
-  });
+  // $('#data_table').DataTable({
+  //   paging: false,
+  // });
 
   $("#lang").change(function(){
     var lg = $("#lang").val();

@@ -16,10 +16,26 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <title>Information Center</title>
-
+  <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="manifest" href="icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <!-- Bootstrap core CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css"> -->
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">  
 
   <style type="text/css">
@@ -39,6 +55,7 @@
     .justselect{
       padding: 5px;
       border: 1px solid #0c0c0c;
+      border-radius: 3px;
     }
     .card-title a{
       text-decoration: none;
@@ -47,6 +64,11 @@
     .card-title a:hover{
       text-decoration: none;
       color: #000;
+    }
+    .h_dep{
+      padding: 3px 6px;
+      background-color: #add8e66e;
+      border-radius: 2px;
     }
     section{
       display: none;
@@ -132,17 +154,21 @@
         <div class="col-lg-12 text-center">
           <p class="lead">Hospital Information and contact details for hospitals within Churachandpur District.</p>
         </div>
-      </div>
-      <hr>
-      
+      </div>      
       <div class="row">
 
-        <div class="col-sm-12 col-md-4">
+        <!-- Hospital listing -->
+        <div class="col-sm-12 col-md-6 col-lg-4 mt-4">
           <div class="card">
             <h5 class="card-header"><i class="fa fa-hospital-o" aria-hidden="true"></i>&nbsp; Churachandpur District Hospital</h5>
             <div class="card-body">
-              <h5 class="card-title"><a href="https://goo.gl/maps/apXM5VwDo8c9trsE7">IB Rd, Hiangtam Lamka, Churachandpur, Manipur 795128</a></h5>
-              <p class="card-text"><strong>Departments: &nbsp;</strong></p>
+              <h5 class="card-title">IB Rd, Hiangtam Lamka, Churachandpur, Manipur 795128</h5>
+              <p class="card-text"><strong>Departments:</strong><br>
+                <span class="h_dep">OPD</span>
+                <span class="h_dep">Emergency</span>
+                <span class="h_dep">Neurology</span>
+                <span class="h_dep">Cardiology</span>
+              </p>
             </div>
             <div class="card-footer">
               <a href="tel:9612922652" class="btn btn-outline-success float-left"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;Call</a>
@@ -151,8 +177,6 @@
           </div>
         </div>
 
-
-
       </div> <!-- row -->
     </div>
   </section> <!-- End Section Hospital -->
@@ -160,7 +184,7 @@
   <div class="pb-5"></div>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+  <!-- <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script> -->
   <script src="js/mjs.js"></script>
 </body>
 
