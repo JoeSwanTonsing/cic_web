@@ -34,8 +34,7 @@
   <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <!-- Bootstrap core CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-  <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">  
 
   <style type="text/css">
@@ -96,8 +95,11 @@
             <a class="nav-link" id="nav_home" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="nav_hospital" href="#hospital">Hospitals</a>
+            <a class="nav-link" id="nav_health" href="#health">Health</a>
           </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" id="nav_nursing" href="#nursin">Hospitals</a>
+          </li> -->
           <!-- <li class="nav-item">
             <a class="nav-link" id="nav_pharmacy" href="#">Pharmacy</a>
           </li> -->
@@ -147,44 +149,180 @@
     </div>
   </div>
 
-  <section id="hospital" class="d-none">
+  <section id="health" class="d-none">
     <!-- Page Content -->
     <div class="container">
       <div class="row mt-3">
         <div class="col-lg-12 text-center">
-          <p class="lead">Hospital Information and contact details for hospitals within Churachandpur District.</p>
+          <h3> Health Care Facilities </h3>
+          <p class="lead">Hospitals, Clinics and Nursing Home Information and contact details within Churachandpur District.</p>
         </div>
       </div>      
       <div class="row">
+        <div class="col-sm-12 col-md-12">
 
-        <!-- Hospital listing -->
-        <div class="col-sm-12 col-md-6 col-lg-4 mt-4">
-          <div class="card">
-            <h5 class="card-header"><i class="fa fa-hospital-o" aria-hidden="true"></i>&nbsp; Churachandpur District Hospital</h5>
-            <div class="card-body">
-              <h5 class="card-title">IB Rd, Hiangtam Lamka, Churachandpur, Manipur 795128</h5>
-              <p class="card-text"><strong>Departments:</strong><br>
-                <span class="h_dep">OPD</span>
-                <span class="h_dep">Emergency</span>
-                <span class="h_dep">Neurology</span>
-                <span class="h_dep">Cardiology</span>
-              </p>
-            </div>
-            <div class="card-footer">
-              <a href="tel:9612922652" class="btn btn-outline-success float-left"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;Call</a>
-              <a href="https://goo.gl/maps/apXM5VwDo8c9trsE7" class="btn btn-outline-success float-right"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Google Map</a>
-            </div>
-          </div>
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#hsp"> <i class="fa fa-hospital-o" aria-hidden="true"></i>&nbsp;Hospitals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#nrs"> <i class="fa fa-bed" aria-hidden="true"></i>&nbsp;Nursing Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#cln"><i class="fa fa-plus-square" aria-hidden="true"></i>&nbsp;Clinic</a>
+            </li>
+          </ul>
         </div>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <!-- Hospitals Listing -->
+            <div class="tab-pane container active" id="hsp">
+              <!-- Hospital 1 -->
+              <div class="mt-4">
+                <div class="card">
+                  <h5 class="card-header">Churachandpur District Hospital</h5>
+                  <div class="card-body">
+                    <p class="card-title"><i class="fa fa-map-marker text-success" aria-hidden="true"></i>&nbsp;IB Rd, Hiangtam Lamka, Churachandpur, Manipur 795128</p>
+                    <p class="card-text"><strong>Departments:</strong><br>
+                      <span class="h_dep">OPD</span>
+                      <span class="h_dep">Emergency</span>
+                      <span class="h_dep">Neurology</span>
+                      <span class="h_dep">Cardiology</span>
+                    </p>
+                    <p class="card-text">Timings: Open 24Hrs, Everyday </p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="tel:9612922652" class="btn btn-outline-success float-left"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;Call</a>
+                    <a href="https://goo.gl/maps/apXM5VwDo8c9trsE7" class="btn btn-outline-success float-right"><i class="fa fa-compass" aria-hidden="true"></i>&nbsp;&nbsp;Google Map</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Hospital 2 -->
+              <div class="mt-4">
+                <div class="card">
+                  <h5 class="card-header">Sielmat Christian Hospital</h5>
+                  <div class="card-body">
+                    <p class="card-title"><i class="fa fa-map-marker text-success" aria-hidden="true"></i>&nbsp;Sielmat, Churachandpur, Manipur 795128</p>
+                    <!-- <p class="card-text"><strong>Departments:</strong><br> -->
+                      <!-- <span class="h_dep">OPD</span>
+                      <span class="h_dep">Emergency</span>
+                      <span class="h_dep">Neurology</span>
+                      <span class="h_dep">Cardiology</span> -->
+                    </p>
+                    <p class="card-text">Timings: Open 24Hrs, Everyday </p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="tel:03874233305" class="btn btn-outline-success float-left"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;Call</a>
+                    <a href="https://goo.gl/maps/6bg4TMk5xamwuza97" class="btn btn-outline-success float-right"><i class="fa fa-compass" aria-hidden="true"></i>&nbsp;&nbsp;Google Map</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Nursing Home Listing -->
+            <div class="tab-pane container fade" id="nrs">
+              <!-- Nursing Home 1 -->
+              <div class="mt-4">
+                <div class="card">
+                  <h5 class="card-header"><i class="fa fa-hospital-o" aria-hidden="true"></i>&nbsp; Lamka Nursing Home</h5>
+                  <div class="card-body">
+                    <p class="card-title"><i class="fa fa-map-marker text-success" aria-hidden="true"></i>&nbsp;IB Rd, Hiangtam Lamka, Churachandpur, Manipur 795128</p>
+                    <p class="card-text"><strong>Departments:</strong><br>
+                      <!-- <span class="h_dep">OPD</span>
+                      <span class="h_dep">Emergency</span> -->
+                      <!-- <span class="h_dep">OPD</span>
+                      <span class="h_dep">Emergency</span>
+                      <span class="h_dep">Neurology</span>
+                      <span class="h_dep">Cardiology</span> -->
+                    </p>
+                    <!-- <p class="card-text">Timings: 5:30 AM – 4:30 PM, Everyday </p> -->
+                  </div>
+                  <div class="card-footer">
+                    <!-- <a href="tel:03874233305" class="btn btn-outline-success float-left"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;Call</a> -->
+                    <a href="https://goo.gl/maps/ivjiYpgJcmwDnvHVA" class="btn btn-outline-success float-right"><i class="fa fa-compass" aria-hidden="true"></i>&nbsp;&nbsp;Google Map</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Nursing Home 2 -->
+              <div class="mt-4">
+                <div class="card">
+                  <h5 class="card-header"><i class="fa fa-hospital-o" aria-hidden="true"></i>&nbsp; Nazareth Nursing Home</h5>
+                  <div class="card-body">
+                    <p class="card-title"><i class="fa fa-map-marker text-success" aria-hidden="true"></i>&nbsp;NH 150, Hiangtam Lamka, Churachandpur, Manipur 795128</p>
+                    <!-- <p class="card-text"><strong>Departments:</strong><br> -->
+                      <!-- <span class="h_dep">OPD</span>
+                      <span class="h_dep">Emergency</span> -->
+                      <!-- <span class="h_dep">OPD</span>
+                      <span class="h_dep">Emergency</span>
+                      <span class="h_dep">Neurology</span>
+                      <span class="h_dep">Cardiology</span> -->
+                    </p>
+                    <p class="card-text">Timings: 5:30 AM – 4:30 PM, Everyday </p>
+                  </div>
+                  <div class="card-footer">
+                    <!-- <a href="tel:03874233305" class="btn btn-outline-success float-left"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;Call</a> -->
+                    <a href="https://goo.gl/maps/WngvxD7Z1F6agnbL9" class="btn btn-outline-success float-right"><i class="fa fa-compass" aria-hidden="true"></i>&nbsp;&nbsp;Google Map</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Nursing Home 3 -->
+              <div class="mt-4">
+                <div class="card">
+                  <h5 class="card-header"><i class="fa fa-hospital-o" aria-hidden="true"></i>&nbsp; Grace Nursing Home</h5>
+                  <div class="card-body">
+                    <p class="card-title"><i class="fa fa-map-marker text-success" aria-hidden="true"></i>&nbsp;Zion Veng, New Lamka, Churachandpur, Manipur 795128</p>
+                    <p class="card-text"><strong>Departments:</strong><br>
+                      <span class="h_dep">OPD</span>
+                      <span class="h_dep">Emergency</span>
+                      <!-- <span class="h_dep">OPD</span>
+                      <span class="h_dep">Emergency</span>
+                      <span class="h_dep">Neurology</span>
+                      <span class="h_dep">Cardiology</span> -->
+                    </p>
+                    <p class="card-text">Timings: <!-- Open 24Hrs, Everyday --> </p>
+                  </div>
+                  <div class="card-footer">
+                    <!-- <a href="tel:03874233305" class="btn btn-outline-success float-left"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;Call</a> -->
+                    <a href="https://goo.gl/maps/ASDYtdrjBcSsNnzV8" class="btn btn-outline-success float-right"><i class="fa fa-compass" aria-hidden="true"></i>&nbsp;&nbsp;Google Map</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Nursing Home 4 -->
+              <div class="mt-4">
+                <div class="card">
+                  <h5 class="card-header"><i class="fa fa-hospital-o" aria-hidden="true"></i>&nbsp; Samaritan Nursing Home</h5>
+                  <div class="card-body">
+                    <p class="card-title"><i class="fa fa-map-marker text-success" aria-hidden="true"></i>&nbsp;B.Aizalon, Churachandpur, Manipur 795128</p>
+                    <p class="card-text"><strong>Departments:</strong><br>
+                      <span class="h_dep">OPD</span>
+                      <span class="h_dep">Emergency</span>
+                      <!-- <span class="h_dep">OPD</span>
+                      <span class="h_dep">Emergency</span>
+                      <span class="h_dep">Neurology</span>
+                      <span class="h_dep">Cardiology</span> -->
+                    </p>
+                    <p class="card-text">Timings: Open 24Hrs, Everyday </p>
+                  </div>
+                  <div class="card-footer">
+                    <a href="tel:03874233305" class="btn btn-outline-success float-left"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;Call</a>
+                    <a href="https://goo.gl/maps/6bg4TMk5xamwuza97" class="btn btn-outline-success float-right"><i class="fa fa-compass" aria-hidden="true"></i>&nbsp;&nbsp;Google Map</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Clinic Listing -->
+            <div class="tab-pane container fade" id="cln">...</div>
+          </div>
 
+       <!--  </div>  --><!-- col-sm-12 -->
       </div> <!-- row -->
     </div>
   </section> <!-- End Section Hospital -->
 
   <div class="pb-5"></div>
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-  <!-- <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script src="js/mjs.js"></script>
 </body>
 

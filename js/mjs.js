@@ -20,18 +20,18 @@ function sec_hide(){
   $('section').addClass('d-none');
 }
 
-function hosp_ON(){
-  if($('#hospital').hasClass('d-none')){
-    $('#hospital').removeClass('d-none');
+function health_ON(){
+  if($('#health').hasClass('d-none')){
+    $('#health').removeClass('d-none');
   }
-  $('#hospital').addClass('d-block')
+  $('#health').addClass('d-block')
 }
 
-function hosp_OFF(){
-  if($('#hospital').hasClass('d-block')){
-    $('#hospital').removeClass('d-block');
+function health_OFF(){
+  if($('#health').hasClass('d-block')){
+    $('#health').removeClass('d-block');
   }
-  $('#hospital').addClass('d-none')
+  $('#health').addClass('d-none')
 }
 
 
@@ -44,7 +44,7 @@ function showHome(){
 function showHospital(){
   homeOff()
   sec_hide();
-  hosp_ON();
+  health_ON();
 }
 
 function showPharmacy(){
@@ -52,10 +52,6 @@ function showPharmacy(){
 }
 
 $(document).ready( function () {
-  // $('#data_table').DataTable({
-  //   paging: false,
-  // });
-
   $("#lang").change(function(){
     var lg = $("#lang").val();
     if(lg=='en'){
@@ -69,7 +65,7 @@ $(document).ready( function () {
   $("#nav_home").click(function(){
     showHome();
   })
-  $("#nav_hospital").click(function(){
+  $("#nav_health").click(function(){
     showHospital();
   })
 })
