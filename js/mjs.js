@@ -61,9 +61,9 @@ $(document).ready( function () {
     if(lg=='en'){
       window.location.replace("index.html");
     }
-    else if(lg=='pai'){
-      window.location.replace("paite.html"); 
-    }
+    // else if(lg=='pai'){
+    //   window.location.replace("paite.html"); 
+    // }
   });
 
   $("#nav_home").click(function(){

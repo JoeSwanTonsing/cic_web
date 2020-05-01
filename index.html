@@ -40,6 +40,14 @@
       padding: 5px;
       border: 1px solid #0c0c0c;
     }
+    .card-title a{
+      text-decoration: none;
+      color: #000;
+    }
+    .card-title a:hover{
+      text-decoration: none;
+      color: #000;
+    }
     section{
       display: none;
     }
@@ -91,7 +99,7 @@
         <label for="lang">You are viewing this site in:</label>
         <select name="lang" id="lang" class="justselect">
           <option value="en" selected="true">English (Default)</option>
-          <option value="pai">Paite</option>
+          <!-- <option value="pai">Paite</option> -->
         </select>
       </div>
     </div>
@@ -135,7 +143,10 @@
             <div class="card-body">
               <h5 class="card-title"><a href="https://goo.gl/maps/apXM5VwDo8c9trsE7">IB Rd, Hiangtam Lamka, Churachandpur, Manipur 795128</a></h5>
               <p class="card-text"><strong>Departments: &nbsp;</strong></p>
-              <a href="tel:9612922652" class="btn btn-primary">Call</a>
+            </div>
+            <div class="card-footer">
+              <a href="tel:9612922652" class="btn btn-outline-success float-left"><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;Call</a>
+              <a href="https://goo.gl/maps/apXM5VwDo8c9trsE7" class="btn btn-outline-success float-right"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;&nbsp;Google Map</a>
             </div>
           </div>
         </div>
